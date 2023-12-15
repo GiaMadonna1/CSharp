@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "9Mp4FOEBjvPfuePKHpQz0e1XLcLMiZirjy0VvOrSFz7pA5xuCVumr/zDrweJVrVQfE/QIHD22f6ipn1XOJsSmA==",
+  "dgSpecHash": "8bXEx9Ytlof4JLYLP/az0Db+XOcXGs/uzVEJGW+3EEiCrWu1Xt9PjUEQ6BEVtAu75o08ko1WpZtB8e1cGEpvvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\giama\\Desktop\\C#\\Learning\\CSharp\\CSharp\\CSharp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Gia\\Desktop\\coding\\CSharp\\CSharp\\CSharp\\CSharp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Gia\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Gia\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Gia\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Gia\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -10,18 +10,19 @@
    variable x to a textbox on screen.
    */ 
 
-  using System;  //Import system namespace
+  using System;
+using System.Drawing;  //Import system namespace
 
-  //int x = 12 * 30;
-  //Console.WriteLine (x); //No need to call on system down here. 
+//int x = 12 * 30;
+//Console.WriteLine (x); //No need to call on system down here. 
 
-  
+
 /* Both answers come out to 360. The next question shows a series of statements surrounded by a pair of braces and is known
 as a statement block. A method recieves input data from the caller by specifying perameters. Output data is sent back using
 a designated return type. */
- 
- //Console.WriteLine (FeetToInches(30)); //360
- //Console.WriteLine(FeetToInches(100)); //1200
+
+//Console.WriteLine (FeetToInches(30)); //360
+//Console.WriteLine(FeetToInches(100)); //1200
 
 /* int FeetToInches (int feet)
 {
@@ -166,12 +167,94 @@ public class Panda
 accessed from an outside class. In OOP terms, the public members encapsulate the private members of a class, like a ring of
 poor peasants protecting their king. 
 */
-
+/*
 class Program
 {
-  static void Main()
+  static void Main() //program entry point
   {
     int x = 12 * 30;
     Console.WriteLine (x);
   }
 }
+*/
+/* If there are no top level statements, it looks for a static method called main. You can call main in any class, but there can only
+be one Main (as it should be). Defining a main inside a class can be useful if you need to reach a private member of a particular class.
+
+Types and Conversions
+  int x + 12345;  int is a 32 bit integer
+  long y = x;  Implicit conversion to 64-bit integer
+  short z = (short)x;  Explicit conversion to 16-bit integer.
+
+Explicit versions are required when one of the following is true:
+  The compiler cannot garuntee that they will always succeed
+  Info might be lost during conversion.
+
+Value Types VS. Reference Types
+  Value = most built in types as well as struct & enum
+  Reference = all class, array, delegate, and interface types.
+  Generic Type Params. 
+  Pointer
+
+    You can define a custom value type with the struct keyword.
+      public struct Point { public int X; public int Y;}
+         or
+      public struct Point { public int X,Y; }
+  */
+/*
+Point p1 = new Point();
+p1.X = 7;
+
+Point p2 = p1; // assignment causes copy
+p1.X = 9;
+
+Console.WriteLine (p1.X);
+Console.WriteLine (p2.X); // Answer changes from 7, 7 to 9, 7
+*/
+/* Reference Types
+  Reference types have two parts, an object and a refernce to that object. Here is the previous example rewritten as a class instead of
+  a struct.
+    public class Point { public int X, Y};
+  
+  Assigning a reference type variable copies the reference, not the object. This allows multiple variables to refer to the same object. 
+
+Predefined Types
+  Value Types
+    Numeric
+      -signed integer
+      -unsigned integer
+      -real number
+    Logical (bool)
+    Character (char)
+
+  Reference Types
+    String
+    Object
+
+  Numeric Types
+    Integeral-Signed = 
+    sbyte     SByte     8 bits  -2^7 to 2^7 -1
+    short     Int16     16 bits   -2^15 to 2^15 -1
+    int       Int32     32 bits   -2^31 to 2^31 -1
+    long      Int64     64 bits -2^63 to 2^63 -1
+    nint      IntPtr    32/64 bits
+
+    Integeral-Unsigned =
+    byte      Byte      8 bits    0 to 2^8-1
+    ushort    UInt16    16        0 to 2^16-1
+    uint      UInt32    32        0 to 2^32-1
+    ulong     UInt64    64        0 to 2^64-1
+    unint UIntPtr        32/64
+
+    Real =
+    float     single    F   32 bits +- (about 10^-45 to 10^38)
+    double    double    D   64 bits +- (about 10^-324 to 10^308)
+    decimal   Decimal   M   128 bits +- (about 10^-28 to 10^28)
+    
+
+  */
+
+
+
+
+
+
